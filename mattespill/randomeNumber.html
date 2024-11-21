@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randome Nummer</title>
+    <link rel="stylesheet" href="randomeNummer.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            Velkommen
+            <br>
+            Dette er et helt fantastisk spill
+        </header>
+        <div id="venstre">
+            <h1>Start:</h1>
+            <button id="button1" onclick="start(); ror()">Start</button>
+        </div>
+
+        <div id="midten">
+            <div id="sky">
+                <p id="p2"> tall her</p>
+            </div>
+            <h1 id="tapt"></h1>
+            
+
+                
+            </table>
+        </div>
+
+       
+
+        <div id="høyre">
+            <div>
+                <h1>Score:</h1>
+                <p id="score">0</p>
+            </div>
+        </div>
+
+        <div class="rør">
+            <div id="ror1" onclick="ror1()"><p id="rørp1"></p></div>
+            <div id="ror2" onclick="ror2()"><p id="rørp2"></p></div>
+            <div id="ror3" onclick="ror3()"><p id="rørp3"></p></div>
+        </div>
+
+        <div id="bunn">
+            <h1>Tid brukt:</h1>
+            <div id="tidBox">
+            <p id="tid">0</p>
+            <p style="margin-left: 10px;">sekunder</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="spill.js"></script>
+
+
+</html>

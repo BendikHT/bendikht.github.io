@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Highscore testing</title>
+    </head>
+    <body>
+        <h1>HighScore API Testing</h1>
+
+        <h2>Get test</h2>
+        <button onclick="getRequest()">Test Get</button>
+        <div class="result" id="get_result"></div>
+        <h2>Post test</h2>
+        <input type="number" id="hs_number" placeholder="Enter HS number" />
+        <input type="text" id="hs_player" placeholder="Enter HS Player Name" />
+        <button onclick="postRequest()">Post new HS</button>
+        <div class="result" id="post_result"></div>
+        <script src="spill.js"></script>
+        <script src="start.js"></script>
+    </body>
+</html>
