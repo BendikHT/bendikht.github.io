@@ -38,7 +38,8 @@ function start() {
     if (!tidInterval) {
         tidInterval = setInterval(tidSidenStart, 1000);
     }
-    setTimeout(ferdig, 6000)
+    
+    setTimeout(ferdig, 10010)
 }
 
 function ror() {
@@ -147,29 +148,15 @@ function finnPosisjon() {
 
 function ferdig() {
     lagreinfo()
-    window.open("start.html", "_self")
+    window.open("index.html", "_self")
     document.getElementById("tid1") = tid1;
     document.getElementById("score").innerHTML = score;
-    clearInterval(tidInterval);
-    tidInterval = null;
-    tid = 0;
 }
 
 
 function tapt() {
     if (score < 0) {
-        score = 0;
-        document.getElementById("tapt").innerHTML = "Du har Tapt";
-        document.getElementById("score").innerHTML = score;
-        clearInterval(tidInterval);
-        tidInterval = null;
-        tid = 0;
-
-        document.getElementById("rørp1").innerHTML = "";
-        document.getElementById("rørp2").innerHTML = "";
-        document.getElementById("rørp3").innerHTML = "";
-        box.classList.remove("tallFall");
-        void box.offsetWidth;
+        ferdig()
     } else {
         document.getElementById("tapt").innerHTML = "";
     }

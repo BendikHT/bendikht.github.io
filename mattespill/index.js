@@ -1,7 +1,12 @@
-const URL = "https://rasmusweb.no/hs.php"
-const GameID = "bendikspill"
+const svar = localStorage.score;
+document.getElementById("dinscore").innerHTML = svar;
+if(svar < 0){
+    document.getElementById("dinscore").innerHTML = "Du Tapte";
+}
 
-document.addEventListener("DOMContentLoaded", postRequest);
+
+const URL = "https://rasmusweb.no/hs.php"
+const GameID = "spillbendik"
 
 const requestOptions = {
     method: "GET",
@@ -60,6 +65,3 @@ function appendPElm(htmlObj, text) {
     p.textContent = text
     htmlObj.appendChild(p)
 }
-
-const svar = localStorage.score;
-document.getElementById("hs_number").value = svar;

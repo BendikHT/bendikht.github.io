@@ -4,61 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randome Nummer</title>
-    <link rel="stylesheet" href="randomeNummer.css">
+    <title>Start</title>
+    <link rel="stylesheet" href="spill.css">
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
+    <header>
+        <h1> Spill </h1>
+    </header>
 
-    <div class="main">
-        <header>
-            Velkommen
-            <br>
-            Dette er et helt fantastisk spill
-        </header>
-        <div id="venstre">
-            <h1>Start:</h1>
-            <button id="button1" onclick="start(); ror()">Start</button>
-        </div>
+    <div id="dinscorebox">
+        <h2 style="padding-right: 20px;">Din score:</h2>
+        <h2 id="dinscore">0</h2>
+    </div>
+    <div id="scoreboard">
+        <table>
+            <tr>
+                <th colspan="2">HighScore</th>
+            </tr>
+            <tr>
+                <td>Spiller</td>
+                <td>Score</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+        </table>
+    </div>
+    <p id="infotekst">
+        Dette er et spill der du skal finne hvilken box som er det samme som tallet som kommer ned. Du trykker bare på
+        den boksen du vil starte.
+        Fra du trykker start har du et minutt på deg til og samle så mye poeng som mulig. Riktig svar er 10 poeng feil
+        svar er -10 poeng og bruker du for lang tid ja da for du -5 poeng.
+        da er det bare og starte. lykke til
+    </p>
+    <div class="startespilletbox">
 
-        <div id="midten">
-            <div id="sky">
-                <p id="p2"> tall her</p>
-            </div>
-            <h1 id="tapt"></h1>
-            
-
-                
-            </table>
-        </div>
-
-       
-
-        <div id="høyre">
-            <div>
-                <h1>Score:</h1>
-                <p id="score">0</p>
-            </div>
-        </div>
-
-        <div class="rør">
-            <div id="ror1" onclick="ror1()"><p id="rørp1"></p></div>
-            <div id="ror2" onclick="ror2()"><p id="rørp2"></p></div>
-            <div id="ror3" onclick="ror3()"><p id="rørp3"></p></div>
-        </div>
-
-        <div id="bunn">
-            <h1>Tid brukt:</h1>
-            <div id="tidBox">
-            <p id="tid">0</p>
-            <p style="margin-left: 10px;">sekunder</p>
-            </div>
-        </div>
+        <button>
+            <a href="spill.html">Start spillet</a>
+        </button>
     </div>
 
-    
+    <script src="index.js"></script>
 </body>
-<script src="spill.js"></script>
-
 
 </html>

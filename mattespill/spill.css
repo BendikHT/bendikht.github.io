@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=DynaPuff:wght@400..700&family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @font-face {
     font-family: Digital;
     src: url(fonter/digital-7/digital-7.ttf);
@@ -14,6 +15,8 @@
 
 body {
     overflow: hidden;
+    background-color: rgb(173, 219, 208);
+
 }
 
 h1 {
@@ -25,8 +28,12 @@ p{
     font-size: 30px;
 }
 
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
 .main {
-    background-color: rgb(173, 219, 208);
     display: grid;
     grid-template-columns: 20% auto 20%;
     grid-template-rows: 10vh 70vh 5vh 15vh;
@@ -101,21 +108,7 @@ header {
     font-size: 100px;
 }
 
-#scoreboard{
-    border-collapse: collapse;
-    border: 1px solid black;
-    background-color:rgb(173, 219, 208) ;
-    position: relative;
-    z-index: 20;
-    width: 80%;
-    margin: auto;
-}
 
-table, th, td {
-    border: 1px solid black; 
-    padding: 8px;
-    text-align: center;
-}
 
 button{
     width: 100px;

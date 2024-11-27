@@ -1,0 +1,54 @@
+*{
+    font-family: Quicksand;
+
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color:rgb(173, 219, 208) ;
+    position: relative;
+    z-index: 20;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+
+th{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: center;
+}
+
+p{
+    font-family: Quicksand;
+    font-weight: 100;
+}
+
+#dinscorebox{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#infotekst{
+    padding: 30px 0px 30px 0px;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.startespilletbox{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
