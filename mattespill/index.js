@@ -73,3 +73,6 @@ function submitscore(event) {
 }
 
 document.getElementById("dinscore").innerHTML = svar;
+if(svar < 0){
+    document.getElementById("dinscore").innerHTML = "Du Tapte";
+}
