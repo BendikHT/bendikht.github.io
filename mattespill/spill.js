@@ -39,7 +39,7 @@ function start() {
         tidInterval = setInterval(tidSidenStart, 1000);
     }
     
-    setTimeout(ferdig, 10010)
+    setTimeout(ferdig, 60000)
 }
 
 function ror() {
