@@ -1,12 +1,7 @@
-const svar = localStorage.score;
-document.getElementById("dinscore").innerHTML = svar;
-if(svar < 0){
-    document.getElementById("dinscore").innerHTML = "Du Tapte";
-}
-
 
 const URL = "https://rasmusweb.no/hs.php"
-const GameID = "spillbendik"
+const GameID = "bendikspill"
+const svar = localStorage.score;
 
 const requestOptions = {
     method: "GET",
@@ -32,14 +27,9 @@ async function getRequest() {
 }
 
 // Poster ny HS til php backend
-async function postRequest(svar) {
-    const htmlObj = document.getElementById("post_result")
-    htmlObj.innerHTML = "Waiting for response"
+async function postRequest(score, playername) {
 
-    postBody = {}
-    postBody.id = GameID
-    postBody.hs = document.getElementById("hs_number").value
-    postBody.player = document.getElementById("hs_player").value
+    postBody = {"id": GameID, "hs": score, "player": playername}
 
     const apiCallPromise = await fetch(URL, {
         method: "POST",
@@ -49,8 +39,8 @@ async function postRequest(svar) {
         body: JSON.stringify(postBody),
     })
 
-    htmlObj.innerHTML = ""
 
+    /*
     appendPElm(htmlObj, "StatusCodeOK: " + apiCallPromise.ok)
 
     // Getting the json from the response:
@@ -58,6 +48,7 @@ async function postRequest(svar) {
     console.log(responseJson)
 
     appendPElm(htmlObj, "Response: " + responseJson)
+    */
 }
 
 function appendPElm(htmlObj, text) {
@@ -65,3 +56,20 @@ function appendPElm(htmlObj, text) {
     p.textContent = text
     htmlObj.appendChild(p)
 }
+
+function submitscore(event) {
+    event.preventDefault();
+    const navnInput = document.getElementById("navn").value;
+    const input = document.getElementById("navn")
+    if (!navnInput) {
+        alert("Vennligst skriv inn navnet ditt.");
+    } else if (svar >= 0) {
+        postRequest(svar, navnInput);
+        input.placeholder = navnInput;
+        input.value = ""
+    }
+
+    return false;
+}
+
+document.getElementById("dinscore").innerHTML = svar;

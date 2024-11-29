@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <header>
-        <h1> Spill </h1>
-    </header>
-
     <div id="dinscorebox">
         <h2 style="padding-right: 20px;">Din score:</h2>
         <h2 id="dinscore">0</h2>
     </div>
+    <form onsubmit="submitscore(event);">
+        <p>Skriv inn navnet ditt</p>
+        <input type="text" placeholder="Spillernavn" id="navn">
+    </form>
     <div id="scoreboard">
         <table>
             <tr>
@@ -49,7 +49,7 @@
     <p id="infotekst">
         Dette er et spill der du skal finne hvilken box som er det samme som tallet som kommer ned. Du trykker bare på
         den boksen du vil starte.
-        Fra du trykker start har du et minutt på deg til og samle så mye poeng som mulig. Riktig svar er 10 poeng feil
+        Fra du trykker start har du et minutt på deg til og samle så mye poeng som mulig. Riktig svar er 10 poeng, feil
         svar er -10 poeng og bruker du for lang tid ja da for du -5 poeng.
         da er det bare og starte. lykke til
     </p>

@@ -1,6 +1,9 @@
 *{
     font-family: Quicksand;
+}
 
+body{
+    overflow: auto;
 }
 
 table{
@@ -29,6 +32,7 @@ td {
 p{
     font-family: Quicksand;
     font-weight: 100;
+    font-size: 20px;
 }
 
 #dinscorebox{
@@ -41,7 +45,6 @@ p{
     padding: 30px 0px 30px 0px;
     width: 70%;
     margin: auto;
-    font-size: 20px;
     text-align: center;
 }
 
@@ -51,4 +54,13 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+form{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+input{
+    width: 200px;
 }

@@ -164,5 +164,11 @@ function tapt() {
 
 function lagreinfo() {
     localStorage.setItem("score", score);
-    localStorage.setItem("tid", tid * 10)
 }
+
+function tilbake(){
+    window.open("index.html", "_self")
+}
+
+start()
+ror()
